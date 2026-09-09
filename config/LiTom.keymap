@@ -45,7 +45,7 @@
         compatible = "zmk,combos";
 
         eisu_base {
-            bindings = <&kp LANGUAGE_2>;
+            bindings = <&kp LANG2>;
             key-positions = <18 17>;
             require-prior-idle-ms = <0>;
             layers = <0>;
@@ -55,6 +55,21 @@
             bindings = <&kp LANG1>;
             key-positions = <21 22>;
             layers = <0>;
+        };
+
+        paren_pare {
+            bindings = <&paren_left_cursor>;
+            key-positions = <24 25>;
+            layers = <0>;
+        };
+    };
+
+    macros {
+        paren_left_cursor: paren_left_cursor {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            label = "PAREN_LEFT_CURSOR";
         };
     };
 
