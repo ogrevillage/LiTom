@@ -41,7 +41,24 @@
         };
     };
 
-    keymap: keymap {
+    keymap: combos {
+        compatible = "zmk,combos";
+
+        eisu_base {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <18 17>;
+            require-prior-idle-ms = <0>;
+            layers = <0>;
+        };
+
+        kana_base {
+            bindings = <&kp LANG1>;
+            key-positions = <21 22>;
+            layers = <0>;
+        };
+    };
+
+    keymap {
         compatible = "zmk,keymap";
 
         default_layer {
