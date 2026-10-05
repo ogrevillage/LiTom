@@ -67,7 +67,7 @@
         paren_left_cursor: paren_left_cursor {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            bindings = <&kp LS(N8) &kp LS(N9) &kp LEFT_ARROW>;
             label = "PAREN_LEFT_CURSOR";
         };
     };
