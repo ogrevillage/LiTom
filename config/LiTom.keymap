@@ -12,7 +12,7 @@
     temp-layer-enabled;
     temp-layer = <1>;
     temp-layer-activation-delay-ms = <0>;
-    temp-layer-deactivation-delay-ms = <400>;
+    temp-layer-deactivation-delay-ms = <5000>;
 };
 
 #undef ZMK_POINTING_DEFAULT_SCRL_VAL
