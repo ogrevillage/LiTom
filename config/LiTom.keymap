@@ -10,7 +10,7 @@
 
 &mouse_runtime_input_processor {
     temp-layer-enabled;
-    temp-layer = <1>;
+    temp-layer = <3>;
     temp-layer-activation-delay-ms = <0>;
     temp-layer-deactivation-delay-ms = <5000>;
 };
