@@ -34,8 +34,8 @@
             compatible = "zmk,behavior-runtime-sensor-rotate";
             label = "ENCODER_TAB_SLIDE";
             #sensor-binding-cells = <0>;
-            cw-binding = <&kp LA(LG(RIGHT_ARROW))>;
-            ccw-binding = <&kp LA(LG(LEFT_ARROW))>;
+            cw-binding = <&msc SCRL_DOWN>;
+            ccw-binding = <&msc SCRL_UP>;
             tap-ms = <20>;
         };
     };
@@ -85,7 +85,7 @@
             >;
 
             sensor-bindings = <
-                &scroll_up_down
+                &tab_slide
                 &scroll_up_down
                 &scroll_up_down
             >;
@@ -101,7 +101,7 @@
             >;
 
             sensor-bindings = <
-                &scroll_up_down
+                &tab_slide
                 &scroll_up_down
                 &scroll_up_down
             >;
@@ -117,7 +117,7 @@
             >;
 
             sensor-bindings = <
-                &scroll_up_down
+                &tab_slide
                 &scroll_up_down
                 &scroll_up_down
             >;
@@ -133,7 +133,7 @@
             >;
 
             sensor-bindings = <
-                &scroll_up_down
+                &tab_slide
                 &scroll_up_down
                 &scroll_up_down
             >;
@@ -149,7 +149,7 @@
             >;
 
             sensor-bindings = <
-                &scroll_up_down
+                &tab_slide
                 &scroll_up_down
                 &scroll_up_down
             >;
@@ -165,7 +165,7 @@
             >;
 
             sensor-bindings = <
-                &scroll_up_down
+                &tab_slide
                 &scroll_up_down
                 &scroll_up_down
             >;
