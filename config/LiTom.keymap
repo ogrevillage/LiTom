@@ -38,6 +38,13 @@
             ccw-binding = <&msc SCRL_UP>;
             tap-ms = <20>;
         };
+
+        bottom_diag: behavior_sensor_rotate_bottom_diag {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp S>, <&kp A>;
+            tap-ms = <20>;
+        };
     };
 
     keymap: combos {
@@ -85,7 +92,7 @@
             >;
 
             sensor-bindings = <
-                &tab_slide
+                &bottom_diag
                 &scroll_up_down
                 &scroll_up_down
             >;
@@ -101,7 +108,7 @@
             >;
 
             sensor-bindings = <
-                &tab_slide
+                &bottom_diag
                 &scroll_up_down
                 &scroll_up_down
             >;
@@ -117,7 +124,7 @@
             >;
 
             sensor-bindings = <
-                &tab_slide
+                &bottom_diag
                 &scroll_up_down
                 &scroll_up_down
             >;
@@ -133,7 +140,7 @@
             >;
 
             sensor-bindings = <
-                &tab_slide
+                &bottom_diag
                 &scroll_up_down
                 &scroll_up_down
             >;
@@ -149,7 +156,7 @@
             >;
 
             sensor-bindings = <
-                &tab_slide
+                &bottom_diag
                 &scroll_up_down
                 &scroll_up_down
             >;
@@ -165,7 +172,7 @@
             >;
 
             sensor-bindings = <
-                &tab_slide
+                &bottom_diag
                 &scroll_up_down
                 &scroll_up_down
             >;
